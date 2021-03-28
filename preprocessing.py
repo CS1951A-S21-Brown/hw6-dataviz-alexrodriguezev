@@ -46,8 +46,8 @@ casts = np.array(list(map(lambda x: x.split(', ') if not isinstance(x, float) el
 links_data = map(lambda x: list(combinations(x, 2)), list(casts))
 # print(list(links_data))
 links_data = list(reduce(lambda a, b: a + b, list(links_data)))
-# links_data = pd.DataFrame(links_data, columns=['source', 'target'])
-print(links_data)
+links_data = pd.DataFrame(links_data, columns=['source', 'target'])
+# print(links_data)
 links_data = list(map(lambda x: [nodes_data.loc[nodes_data['name'] == x[0], 'id'].iloc[0], \
     nodes_data.loc[nodes_data['name'] == x[1], 'id'].iloc[0]], links_data.values))
 
