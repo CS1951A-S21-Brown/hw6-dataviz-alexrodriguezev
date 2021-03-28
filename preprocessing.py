@@ -6,7 +6,7 @@ from itertools import combinations
 
 
 netflix_data = pd.read_csv("data/netflix.csv")
-
+netflix_data = netflix_data[netflix_data['type'] == 'Movie']
 # make nodes dataframe
 actors = [] 
 actors = map(lambda x: x.split(', ') if not isinstance(x, float) else [], netflix_data['cast'])
