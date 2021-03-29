@@ -9,4 +9,48 @@
     text-align: center;
 }
 
-/* Include any custom CSS styling here! */
+#graph1_title {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    transform: translate(370px, 10px);
+    color: black;
+}
+
+#graph3_title {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    transform: translate(85px, 10px);
+    color: black;
+}
+
+#instruction {
+    font-size: 18px;
+    color: black;
+}
+
+.select {
+    font-size: 18px;
+}
+
+#line select,
+#line p {
+    display: inline;
+}
+
+.btn {
+    transform: translate(385px, 10px);
+    font-size: 15px;
+    background-color: #DCDCDC;
+}
+
+.btn:hover {
+    color: black;
+    background-color: #E8E8E8; /* Green */
+    /* color: white; */
+  }
+
+div.tooltip {
+    font-size: 20px;
+}
