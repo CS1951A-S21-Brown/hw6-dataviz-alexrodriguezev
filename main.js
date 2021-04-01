@@ -46,7 +46,7 @@ function setDataGraph1(index) {
     svg1.selectAll("rect").remove();
     svg1.selectAll("text").remove();
 
-    d3.csv("../data/" + filenames_bar_plot[index] + ".csv").then(function(data_graph1) {
+    d3.csv("./data/" + filenames_bar_plot[index] + ".csv").then(function(data_graph1) {
         let x_graph1 = d3.scaleLinear()
             .domain([0, d3.max(data_graph1, function(d) { return parseInt(d.count)})]) 
             .range([0, graph_1_width - margin.left - margin.right]);
@@ -121,7 +121,7 @@ function setDataGraph1(index) {
 
 setDataGraph1(0);
 
-d3.csv("../data/runtime_data.csv").then(function(data_graph2) {
+d3.csv("./data/runtime_data.csv").then(function(data_graph2) {
     //    Add X axis
     var x_graph2 = d3.scaleLinear()
         .domain(d3.extent(data_graph2, function(d) { return parseInt(d.release_year) }))
@@ -220,7 +220,7 @@ function setData(index) {
 
     svg3.selectAll("*").remove();
 
-    d3.json("../data/" + filenames_network_graph[index] + ".json").then(function(data) {
+    d3.json("./data/" + filenames_network_graph[index] + ".json").then(function(data) {
 
         /**
          * GRAPH 3 BEGINS
