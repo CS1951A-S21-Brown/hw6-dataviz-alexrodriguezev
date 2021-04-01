@@ -5,7 +5,7 @@ from functools import reduce
 from itertools import combinations
 
 # load data
-netflix_data = pd.read_csv("./data/netflix.csv")
+netflix_data = pd.read_csv("../data/netflix.csv")
 
 """
 GRAPH 1 PRE-PROCESSING
