@@ -52,71 +52,61 @@
                 </select>
             </div>
             <div id="graph3"></div>
+            <h3>Written Questions</h3>
+            <p>
+                1) Describe how your dashboard answers the questions presented. You don't have to address 
+                every question directly, but should at a high level address the main questions. (10 points)
+
+                    My dashboard answers the questions by providing the information in a manner that is easily and quickly understood. To 
+                    answer how many titles per genre on are Netflix, I provided a bar graph that provided each genre and its corresponding
+                    numnber of titles. Since the plot has a wide range, I provided buttons to filter by type, so the user could view just 
+                    the movie titles and just the TV show titles. To address the question about average runtime of movies by release year, 
+                    I created a scatterplot that plots release years and the average runtime of all the movies released that year. A user 
+                    can hover over datapoints to see more detailed information, if the graph axes are too hard to read. Finally, to address 
+                    the question about learning more about movie casts, I created a flow chart that connects all the actors that have 
+                    played in movies together. To make the graph more relevant and easy to read, I included only the top actors of each
+                    year as a measure of how much movies they were in in total. Moreover, this plot will also show more detailed information,
+                    such as names, when hovering over data points.
+
+                2) List 3 reasons why D3 was helpful and improved your visualization (6 points)
+                    1. They have a lot of graph options, which made it easy to choose the best kind of visualization
+                    2. It's relatively easy to make almost any kind of plot (especially because of "svg"s and other objects, such as "rect"s)
+                    3. It's easy to make graphs easier to understand and more accesible thorugh customization, mouseover events, coloring, etc.
+
+                3) List 3 reasons why D3 would not be the best tool for creating a visualization (6 points)
+                    1. It's hard to manage fitting plots into screens
+                    2. It can be tedious to translate plots across a page
+                    3. It's difficult to make plots that are widely accessible (e.g. sonification)
+
+                Accesible Data Visualization 
+
+                4. Evaluate the accessibility of your dashboard based on the readings in the “Before you begin” section. What kinds of users 
+                    might find this dashboard accessible and who might have more difficulty? What additional actions might you take to make 
+                    this dashboard more accessible to all audiences? Your response should refer to at least one of the readings and be about 
+                    1 paragraph.
+
+                    The kind of users that would find the dashboard accessible may be colorblind users, because of the colors and relatively
+                    large fonts and users with no visual impairments/disabilities. Additional actions I could take to make the dashboard 
+                    more accesible would be to sonify the visualizations so that people who cannot see them can understand them, as Doug
+                    Schepers mentions in the article 'Why Accessibility Is at the Heart of Data Visualization'. To do this, for example,
+                    I could create a sound that follows the curvature of the scatterplot (my graph #2) to describe the change in average
+                    movie runtimes across the years. Moreover, I could add audio that reads off the data on the bar chart and tab-functionality 
+                    that would  allow a user to jump from bar to bar to access the audio, using the tab key. Although my dashboard uses 
+                    different colors to make information clear, it could do more to make it accessible, especially to blind users.
+
+                5. Reflect on the stages of your design and implementation process when you could have taken steps to make your dashboard 
+                    more accessible to all audiences. What are some factors that kept you from taking these steps? (a few sentences)
+
+                    The main factors that kept me from implementing functionality mentioned in the previous question was knowledge on 
+                    how to do them and time constraints. Moreover, d3 -- that I know of -- does not have functionality that is as easy
+                    to use as the rest of it to incorporate measures such as sonification easily. Had sonification, for example, been
+                    featured on the main page of the site provided in the handout that includes all the chart types, I would have 
+                    included sonification in the charts, time permitting.
+
+            </p>
         </div>
     </div>
     <!--Feel free to add more JavaScript files as needed-->
     <script type="text/javascript" src="main.js"></script>
 </body>
 </html>
-
-<!-- 
-
-    Written Questions
-
-    1) Describe how your dashboard answers the questions presented. You don't have to address 
-        every question directly, but should at a high level address the main questions. (10 points)
-
-        My dashboard answers the questions by providing the information in a manner that is easily and quickly understood. To 
-        answer how many titles per genre on are Netflix, I provided a bar graph that provided each genre and its corresponding
-        numnber of titles. Since the plot has a wide range, I provided buttons to filter by type, so the user could view just 
-        the movie titles and just the TV show titles. To address the question about average runtime of movies by release year, 
-        I created a scatterplot that plots release years and the average runtime of all the movies released that year. A user 
-        can hover over datapoints to see more detailed information, if the graph axes are too hard to read. Finally, to address 
-        the question about learning more about movie casts, I created a flow chart that connects all the actors that have 
-        played in movies together. To make the graph more relevant and easy to read, I included only the top actors of each
-        year as a measure of how much movies they were in in total. Moreover, this plot will also show more detailed information,
-        such as names, when hovering over data points.
-
-    2) List 3 reasons why D3 was helpful and improved your visualization (6 points)
-        1. They have a lot of graph options, which made it easy to choose the best kind of visualization
-        2. It's relatively easy to make almost any kind of plot (especially because of "svg"s and other objects, such as "rect"s)
-        3. It's easy to make graphs easier to understand and more accesible thorugh customization, mouseover events, coloring, etc.
-
-    3) List 3 reasons why D3 would not be the best tool for creating a visualization (6 points)
-        1. It's hard to manage fitting plots into screens
-        2. It can be tedious to translate plots across a page
-        3. It's difficult to make plots that are widely accessible (e.g. sonification)
-
-    Accesible Data Visualization 
-
-    4. Evaluate the accessibility of your dashboard based on the readings in the “Before you begin” section. What kinds of users 
-        might find this dashboard accessible and who might have more difficulty? What additional actions might you take to make 
-        this dashboard more accessible to all audiences? Your response should refer to at least one of the readings and be about 
-        1 paragraph.
-
-        The kind of users that would find the dashboard accessible may be colorblind users, because of the colors and relatively
-        large fonts and users with no visual impairments/disabilities. Additional actions I could take to make the dashboard 
-        more accesible would be to sonify the visualizations so that people who cannot see them can understand them, as Doug
-        Schepers mentions in the article 'Why Accessibility Is at the Heart of Data Visualization'. To do this, for example,
-        I could create a sound that follows the curvature of the scatterplot (my graph #2) to describe the change in average
-        movie runtimes across the years. Moreover, I could add audio that reads off the data on the bar chart and tab-functionality 
-        that would  allow a user to jump from bar to bar to access the audio, using the tab key. Although my dashboard uses 
-        different colors to make information clear, it could do more to make it accessible, especially to blind users.
-
-    5. Reflect on the stages of your design and implementation process when you could have taken steps to make your dashboard 
-        more accessible to all audiences. What are some factors that kept you from taking these steps? (a few sentences)
-
-        The main factors that kept me from implementing functionality mentioned in the previous question was knowledge on 
-        how to do them and time constraints. Moreover, d3 -- that I know of -- does not have functionality that is as easy
-        to use as the rest of it to incorporate measures such as sonification easily. Had sonification, for example, been
-        featured on the main page of the site provided in the handout that includes all the chart types, I would have 
-        included sonification in the charts, time permitting.
-
-
-
-    
-
-
-
-
- -->
